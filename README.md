@@ -1,3 +1,3 @@
 # NFL-Player-Modeling-
 
-## The goal of this project is to Analyze NFL Data and Build Models Predicting Various Player and Team Statistics.
+Growing up, I loved playing sports and looking at Statistics. I've played Basketball ever since I was in Elementary School This project allows me to combine both aspects and utilize various Data Analysis/Science tools to combine both of my passions.
