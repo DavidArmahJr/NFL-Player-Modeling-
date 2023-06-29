@@ -1,3 +1,3 @@
 # NFL-Player-Modeling-
 
-Growing up, I loved playing sports and looking at Statistics. I've played Basketball ever since I was in Elementary School This project allows me to combine both aspects and utilize various Data Analysis/Science tools to combine both of my passions.
+Growing up, I loved playing sports. I played Basketball for my Highschool team and my Dad was the stat keeper. I would always ask him about different stats and who would do the best in our games. This was when my to love for data started to begin and how this project came to be. This Project allows me to combine both of my passions Data and Sports.
