@@ -46,3 +46,10 @@ def cleanTeamName(df):
                 R += 1  
     except:
         print('Error trying to clean team names')
+
+def cleanPlayerData(df):
+    df['Lg'] = df['Lg'].str.replace('[A-Za-z]', '', regex=True)
+    df['Lg']=df['Lg'].astype('float64')
+    
+def cleanTeamData(df):
+    df.columns = df.columns.str.replace(u'\xa0', '_')
