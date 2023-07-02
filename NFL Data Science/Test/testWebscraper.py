@@ -1,4 +1,7 @@
-
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import html5lib
 
 
 # Test the Section 1 Method with various cases
