@@ -1,20 +1,4 @@
 #Necessary Imports
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-import html5lib
-import unittest
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split, cross_val_score
-import numpy as np
-import xgboost
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-from xgboost import XGBRegressor
-pd.options.display.float_format ='{:.2f}'.format
-
-
 #passing table URL
 passing_stats = 'https://www.footballdb.com/statistics/nfl/player-stats/passing/2022/regular-season?sort=passrate&limit=all'
 #rushing table URL
@@ -53,6 +37,12 @@ cleanTeamName(dfPlays)
 cleanTeamData(dfPlays)
 
 
+filteredPass,filteredRush,filteredReceive, filteredOffense , \
+filteredDefense, filteredPlays  =initialFilterDF(dfPass,dfRush, \
+                                                 dfReceive,dfOffense,dfDefense,dfPlays)
+
+
+
 
 avgPass, avgRush, avgReceive, \
 avgTeamO, avgTeamD, avgTeamPlays = getAvgDF(filteredPass.copy(), filteredRush.copy(), filteredReceive.copy(), \
@@ -68,5 +58,3 @@ renamePlayerCols(filteredPass, filteredRush, filteredReceive)
 renamePlayerCols(avgPass, avgRush, avgReceive)
 
 fullPlayerDF, fullPlayerAvgsDF = combinePlayerDF(filteredPass,filteredRush,filteredReceive,avgPass,avgRush,avgReceive)
-
-
