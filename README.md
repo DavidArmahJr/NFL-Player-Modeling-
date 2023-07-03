@@ -1,7 +1,4 @@
 # Personal Projects
 
 ## Introduction
-
-My personal projects
-
-### Table of Contents
+[DavidArmahJr_Resume.docx.pdf](https://github.com/DavidArmahJr/Personal-Projects/files/11938557/DavidArmahJr_Resume.docx.pdf)
