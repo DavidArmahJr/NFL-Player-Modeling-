@@ -1,0 +1,78 @@
+<form [formGroup]="checkInForm" (ngSubmit)="onSubmit()" class="login-form">
+    <mat-card class="login-card">
+        <mat-card-header>
+
+            <mat-card-title>Check In</mat-card-title>
+
+        </mat-card-header>
+
+        <mat-card-content>
+
+
+            <!--            <div class="form-group">-->
+            <!--                <mat-form-field>-->
+            <!--                    <input matInput placeholder="Paste access code here" type="number" formControlName="attendanceTrackNumber" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.attendanceTrackNumber.errors }">-->
+            <!--                    <mat-hint *ngIf="submitted && f.attendanceTrackNumber.errors" >-->
+            <!--                        <mat-hint *ngIf="f.attendanceTrackNumber.errors.required">Access Code is required</mat-hint>-->
+            <!--                        <mat-hint *ngIf="f.attendanceTrackNumber.errors.pattern">Access Code is using illegal characters.</mat-hint>-->
+            <!--                    </mat-hint>-->
+            <!--                </mat-form-field>-->
+            <!--            </div>-->
+            <p>
+<!--                <mat-form-field appearance="legacy">-->
+<!--                    <mat-label>Enter name of gym </mat-label>-->
+<!--                    <input type="text" formControlName="gymName" [ngClass]="{ 'is-invalid': submitted && f.gymName.errors }" matInput placeholder="">-->
+<!--                    <div *ngIf="submitted && f.gymName.errors" >-->
+<!--                        <mat-hint *ngIf="f.gymName.errors.required">Gym name is required</mat-hint>-->
+<!--                    </div>-->
+<!--                </mat-form-field>-->
+                <mat-form-field >
+                    <mat-label>Paste check in date here</mat-label>
+                    <input type="date" formControlName="todaysDate" [ngClass]="{ 'is-invalid': submitted && f.todaysDate.errors }" matInput placeholder=" ">
+                    <div *ngIf="submitted && f.todaysDate.errors" >
+                        <mat-hint *ngIf="f.todaysDate.errors.required">Today's Date is required</mat-hint>
+                        <mat-hint *ngIf="f.todaysDate.errors.pattern">Today's Date is typed with errors.</mat-hint>
+                    </div>
+                </mat-form-field>
+
+
+                <mat-form-field>
+                    <mat-select placeholder="Workout Type" formControlName="workoutType">
+                        <mat-option [value]="workout.name" *ngFor="let workout of workoutType;">{{workout.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+
+                <mat-form-field>
+                   <mat-label>Workout duration in minutes</mat-label>
+                    <input matInput placeholder="Workout duration" type="number" formControlName="duration" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.duration.errors }">
+                    <mat-hint *ngIf="submitted && f.duration.errors" >
+                        <mat-hint *ngIf="f.duration.errors.required">Workout duration is required</mat-hint>
+                        <mat-hint *ngIf="f.duration.errors.pattern">Workout duration is using illegal characters.</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Pounds lost </mat-label>
+                    <input matInput placeholder="Pounds lost" type="number" formControlName="poundslost" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.poundslost.errors }">
+                    <mat-hint *ngIf="submitted && f.poundslost.errors" >
+                        <mat-hint *ngIf="f.poundslost.errors.required">Pounds lost is required</mat-hint>
+                        <mat-hint *ngIf="f.poundslost.errors.pattern">Pounds lost is using illegal characters.</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+
+
+
+            </p>
+
+
+
+
+        </mat-card-content>
+        <mat-card-actions>
+
+            <button mat-button [disabled]="loading" >Post</button>
+
+        </mat-card-actions>
+    </mat-card>
+
+</form>

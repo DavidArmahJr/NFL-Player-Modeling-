@@ -1,0 +1,12 @@
+<mat-toolbar *ngIf="isUser">
+
+<!--TODO: show the greeter with username-->
+  <h1>Welcome, {{this.currentUser.username}}</h1>
+
+  <button mat-button routerLink="/">Home</button>
+
+  <button mat-button routerLink="/admin" *ngIf="isTrainer" >Registered users</button>
+  <button mat-button routerLink="/userinfo" *ngIf="!isTrainer" >Personal Progress</button>
+  <button mat-button (click)="logout()">Logout </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
