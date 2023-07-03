@@ -10,9 +10,11 @@ I first started by looking at various data sources and deciding where I wanted t
 
 ### Data Processing
 
-
+Automated processes to build connection to retreive data from specific website pages using BeautifulSoup and requests packages. Stored data in pandas dataframes
 
 ### Data Cleaning
+
+Renamed columns, edited row values that contained unnecesary characters, changed data types of columns
 
 
 
