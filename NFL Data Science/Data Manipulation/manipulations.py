@@ -80,12 +80,14 @@ def combinePlayerDF(filteredPass,filteredRush,filteredReceive,avgPass,avgRush,av
                 .combine_first(avgRush.set_index('Player')) \
                 .combine_first(avgReceive.set_index('Player'))
     
-    fullPlayerDF = fullPlayerDF[columnOrder].fillna(0)
-    fullPlayerAvgsDF = fullPlayerAvgsDF[columnOrder].fillna(0)
+   
     
     columnOrder = ['Team', 'Gms', 'Passing_Att','Passing_Cmp', 'Passing_Yds', 'Passing_TD', 
            'Passing_Int','Sack', 'SackYds_Loss','Rushing_Att', 'Rushing_Yds', 
            'Rushing_TD', 'Rushing_FD', 'Receiving_Tar', 'Receiving_Rec',
             'Receiving_Yds','Receiving_TD','Receiving_FD','Receiving_YAC'   ]
+
+    fullPlayerDF = fullPlayerDF[columnOrder].fillna(0)
+    fullPlayerAvgsDF = fullPlayerAvgsDF[columnOrder].fillna(0)
     
     return fullPlayerDF[columnOrder], fullPlayerAvgsDF[columnOrder]
