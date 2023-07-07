@@ -1,7 +1,7 @@
 
 
 #Plots log return and closing price for a specific stock
-def plots(stock):
+def stockPlot(stock):
   # SPY Index
   stock['log return'] = np.log(stock["Adj Close"]/ stock["Adj Close"].shift(1))
   # Line Plot
