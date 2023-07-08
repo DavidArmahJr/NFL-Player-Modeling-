@@ -16,10 +16,6 @@ In order to answer such questions, I will compare Stocks in different sectors th
 
 ## Project Steps
 
-[Project]([https://www.footballdb.com/](https://github.com/DavidArmahJr/Personal-Projects/blob/main/Quant.%20Finance%20Data%20Science/Coronavirus%20Stock%20Market%20Analysis/CoronavirusQuantAnalysis.ipynb)https://github.com/DavidArmahJr/Personal-Projects/blob/main/Quant.%20Finance%20Data%20Science/Coronavirus%20Stock%20Market%20Analysis/CoronavirusQuantAnalysis.ipynb) 
-
-
-
 ### Data Processing/Collection
 
 
