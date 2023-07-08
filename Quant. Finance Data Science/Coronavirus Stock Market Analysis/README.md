@@ -1,5 +1,5 @@
 ## Introduction
 
-The Coronavirus Pandemic impacted everyone's lives and has caused many to change. I wanted to take a closer look as to how it impacted financial markets. The stock market has always been an interest of mine and I wanted to expand my knowledge and take a look at how it responded to a global health issue.
+This project takes a look into how the Coronavirus Pandemic impacted Financial Markets. Looking at various stock's prices before, during, and after periods of time when the Pandemic was issued.
 
 
