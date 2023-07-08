@@ -1,4 +1,8 @@
 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 #Plots log return and closing price for a specific stock
 def stockPlot(stock):
