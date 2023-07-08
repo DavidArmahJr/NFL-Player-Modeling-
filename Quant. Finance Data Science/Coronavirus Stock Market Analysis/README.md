@@ -18,14 +18,21 @@ In order to answer such questions, I will compare Stocks in different sectors th
 
 ### Data Processing/Collection
 
+Collect Stock Data Using yfinance python package
+
 
 ### Data Cleaning
+
+Cleans and normalizes specific dataset
 
 
 ### Data Analysis
 
+Analyze various time periods and changes of return
+
 
 ### Modeling Development
 
+Build a model to predict future price 
 
 
