@@ -14,4 +14,19 @@ We know how much the Global Coronavirus Pandemic has affected the lives of every
 
 In order to answer such questions, I will compare Stocks in different sectors that represent the entire Stock Market, as well as looking at the most popular Cryptocurrencies in the Crypto Markets, a year before and after the pandemic, while also keeping up with important dates that affected the financial markets throughout the pandemic as well.
 
+## Project Steps
+
+
+### Data Processing/Collection
+
+
+### Data Cleaning
+
+
+### Data Analysis
+
+
+### Modeling Development
+
+
 
