@@ -13,26 +13,26 @@ We know how much the Global Coronavirus Pandemic has affected the lives of every
 5. Create a forecasting model for interesting Stocks
 
 In order to answer such questions, I will compare Stocks in different sectors that represent the entire Stock Market, as well as looking at the most popular Cryptocurrencies in the Crypto Markets, a year before and after the pandemic, while also keeping up with important dates that affected the financial markets throughout the pandemic as well.
-
-## Project Steps
+ry
+## Short Summary of Project Steps
 
 ### Data Processing/Collection
 
-Collect Stock Data Using yfinance python package
+Collect Stock Data Using yfinance python package. Organize specific sector dataframes, etc
 
 
 ### Data Cleaning
 
-Cleans and normalizes specific dataset
+Cleans and normalizes datasets for each specific market sector stock
 
 
 ### Data Analysis
 
-Analyze various time periods and changes of return
+Analyzes various time periods and changes of return. Compares different sector's returns
 
 
 ### Modeling Development
 
-Build a model to predict future price 
+Builds an ARIMA model to predict future price of specific stock
 
 
