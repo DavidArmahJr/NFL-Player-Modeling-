@@ -26,6 +26,11 @@ Collect Stock Data Using yfinance python package. Organize specific sector dataf
 Cleans and normalizes datasets for each specific market sector stock
 
 
+### Data Research
+
+Researched news releases pertaining to critical information of covid pandemic 
+
+
 ### Data Analysis
 
 Analyzes various time periods and changes of return. Compares different sector's returns
