@@ -5,7 +5,7 @@ from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 import missingno as msno
 %matplotlib inline
-
+# Choose stocks to add in Portfolio
 def createPortfolio(tickerList):
     Pr = pd.DataFrame()
     end = date.today()
@@ -17,6 +17,7 @@ def createPortfolio(tickerList):
                            progress=False)['Adj Close']
         Pr = pd.concat([Pr, tmp_close], axis=1)
     Pr.columns = tickerList
+# Daily Log returns of Portolio
 def buildTimeSeries(Pr):
     re = np.log(Pr/Pr.shift(1)).dropna(how='any')
     return re
@@ -39,10 +40,10 @@ def objective(re,weights):
     guess = [1./re.shape[1] for x in range(re.shape[1])]
     optimized_results = minimize(objective, guess, method = "SLSQP", bounds=bounds, constraints=cons)
     return optimized_results # The optimum weights
-
+# Expected Portfolio Returns
 def exp_return(opt_res, time_ser):
     return np.sum(re.mean()*optimized_results.x)
-
+# Random allocation experiment to calculate correct portfolio distributions
 def rand_exp(re):
     weights = np.array(np.random.random(re.shape[1]))
     print('Random Weights:')
@@ -68,7 +69,7 @@ def rand_exp(re):
     print(SR)
     
     return weights, weights1, exp_ret, exp_vol, SR
-
+# monte carlo simulation of random portfolio allocations
 def randn_exp(re, num_ports):
     all_weights = np.zeros((num_ports, len(re.columns)))
     ret_arr = np.zeros(num_ports)
