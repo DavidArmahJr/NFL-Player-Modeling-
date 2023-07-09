@@ -28,7 +28,7 @@ Cleans and normalizes datasets for each specific market sector stock
 
 ### Data Research
 
-Researched news releases pertaining to critical information of covid pandemic 
+Researched news article headlines pertaining to critical information of covid pandemic 
 
 
 ### Data Analysis
