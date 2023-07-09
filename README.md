@@ -1,3 +1,3 @@
 # Personal Projects
 
-Click on Folder to find out more info on Projects
+Click on a Folder to find out more details on specific Project
