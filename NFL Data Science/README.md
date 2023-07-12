@@ -2,7 +2,7 @@
 
 For the past couple years, one of my favorite activities is building projects that allow me to scrape sports data from the web that can be used to analyze specific data in order to make predictions on specific outcomes. Sports has always been an interest of mine growing up and utilizing technology also is one of my passions, so being able to combine those two always is fun for me.
 
-## Project Steps
+## General Project Steps
 
 ### Exploration/ Data Collection
 
@@ -16,13 +16,14 @@ Automated processes to build connection to retreive data from specific website p
 
 Renamed columns, edited row values that contained unnecesary characters, changed data types of columns
 
-
-
-
 ### Data Analysis
+
+Analyzed averages of statistics, compared various statistics, relationships between specific stats, etc. 
 
 
 ### Modeling Development
+
+Various Models used to predict performance
 
 
 
